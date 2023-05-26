@@ -11,7 +11,7 @@ package com.company.ylz.java02;
 
 public class CommonEmployee {
     public static void main(String[] args) {
-        Manager manager = new Manager("理智",1,31032.51);
+        Manager manager = new Manager("理智",1,31032.51,50000);
         manager.work();
     }
 }

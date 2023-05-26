@@ -10,11 +10,13 @@ package com.company.ylz.java02;
  */
 
 public class Manager extends Employee{
-    public Manager(String name, int id, double salary) {
+    double bones;
+    public Manager(String name, int id, double salary,double bones) {
         super(name, id, salary);
+        this.bones=bones;
     }
     @Override
     void work() {
-        System.out.println("经理"+name+"工作中");
+        System.out.println("经理"+getName()+"工作中"+"工资为"+(getSalary()+bones));
     }
 }
